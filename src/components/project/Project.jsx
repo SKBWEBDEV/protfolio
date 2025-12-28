@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import nexcent from "../../assets/nexcent.png";
 import fb from "../../assets/fb.png";
 import orebi from "../../assets/orebi.png";
+
 const projects = [
   {
     id: 1,
@@ -44,59 +45,63 @@ const Project = () => {
   };
 
   return (
-    <div className="py-50 bg-black/50 h-screen">
-      <div className="max-w-200 mx-auto h-150 relative bg-gray-700  rounded-lg shadow-lg">
+    <div className="py-16 bg-black/50 min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-4xl relative bg-gray-700 rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
+        
+        {/* Project Image */}
         <img
           src={projects[current].image}
           alt={projects[current].title}
-          className="w-full mx-auto h-100 object-cover rounded"
+          className="w-full h-64 sm:h-72 md:h-96 object-cover rounded"
         />
 
-        <div className="text-center">
-          <div className="mt-2 flex flex-wrap gap-3 justify-center">
-            {projects[current].technologies.map((tech, index) => (
-              <span
-                key={index}
-                className="text-white text-sm bg-violet-700 px-3 font-semibold py-1 rounded">
-                {tech}
-              </span>
-            ))}
-          </div>
+        {/* Technologies */}
+        <div className="mt-4 flex flex-wrap gap-2 justify-center">
+          {projects[current].technologies.map((tech, index) => (
+            <span
+              key={index}
+              className="text-white text-xs sm:text-sm md:text-base bg-violet-700 px-2 sm:px-3 py-1 rounded font-semibold"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
 
-          <p className="mt-2 font-bold text-[40px] text-amber-400">{projects[current].description}</p>
+        {/* Description */}
+        <p className="mt-3 text-center font-bold text-lg sm:text-xl md:text-2xl text-amber-400">
+          {projects[current].description}
+        </p>
 
-          <div className="flex justify-center gap-5">
-            <a
+        {/* Links */}
+        <div className="flex flex-wrap justify-center gap-3 mt-4">
+          <a
             href={projects[current].liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-green-400 font-semibold transition-all duration-300">
+            className="bg-blue-600 hover:bg-green-400 text-white px-4 py-2 rounded font-semibold transition-all duration-300"
+          >
             Live Project
           </a>
-
           <a
             href={projects[current].githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-3 bg-blue-600 hover:bg-green-400 font-semibold transition-all duration-300 text-white px-4 py-2 rounded">
-            githubLink
+            className="bg-blue-600 hover:bg-green-400 text-white px-4 py-2 rounded font-semibold transition-all duration-300"
+          >
+            Github Link
           </a>
-          </div>
-
         </div>
 
         {/* Navigation Buttons */}
         <button
           onClick={prevProject}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 
-        rounded-full"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full sm:p-3 md:p-4 hover:bg-gray-600 transition"
         >
           &#8592;
         </button>
         <button
           onClick={nextProject}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 
-        rounded-full"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full sm:p-3 md:p-4 hover:bg-gray-600 transition"
         >
           &#8594;
         </button>

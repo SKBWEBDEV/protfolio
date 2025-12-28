@@ -33,23 +33,26 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-   <div className="relative w-full h-screen">
+    <div className="relative w-full min-h-screen overflow-hidden">
       
+      {/* Background video */}
       <video
         src={code}
         autoPlay
         loop
         muted
         playsInline
-        className="absolute w-full h-full object-cover z-0"
+        className="fixed inset-0 w-full h-full object-cover z-0"
       />
       
-      <div className="relative z-10">
+      {/* Content */}
+      <div className="relative z-10 min-h-screen">
         <RouterProvider router={router} />
       </div>
     </div>
   );
 }
+
 
 export default App;
 

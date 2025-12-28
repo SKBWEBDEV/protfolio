@@ -1,62 +1,59 @@
-import { HStack, ProgressCircle } from "rsuite";
+import { ProgressCircle } from "rsuite";
 import Container from "../container/Container";
+
 const Skill = () => {
   return (
-    <div className="bg-black/50 h-screen py-30 ">
+    <div className="bg-black/50 py-16 h-screen pt-25 md:pt-70">
       <Container>
-        <div className=" py-20">
-          <div className="text-white text-center justify-center">
-            <h1 className="text-[50px] font-bold ">Technical Mastery</h1>
-            <p className="text-[20px] font-semibold">
-              A diverse toolkit built on years of problem-solving and
-              architectural design.
-            </p>
+        {/* Heading */}
+        <div className="text-white text-center mb-10">
+          <h1 className="md:text-5xl text-2xl font-bold mb-2">Technical Mastery</h1>
+          <p className=" md:font-semibold md:text-2xl">
+            A diverse toolkit built on years of problem-solving and architectural design.
+          </p>
+        </div>
+
+        {/* Skills Grid: 2 per row */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-10 justify-items-center">
+          {/* Skill Item */}
+          <div className="flex flex-col items-center gap-2">
+            <ProgressCircle percent={90} strokeColor="#ffc107" w={70} className="text-white "/>
+            <span className="text-[#ffc107] font-semibold text-sm sm:text-base">React.js</span>
           </div>
 
-          <div className="text-white">
-            <HStack className="flex justify-center mt-25" spacing={100}>
-              <p className="text-white text-center items-center">
-                {" "}
-                <span>React.js</span>{" "}
-                <ProgressCircle percent={90} strokeColor="#ffc107" w={100} />
-              </p>
-              <p className="text-white text-center items-center">
-                <span>CSS</span>{" "}
-                <ProgressCircle percent={90} strokeColor="#4caf50" w={100} />
-              </p>
-              <p className="text-white text-center items-center">
-                <span>Tailwind CSS</span>{" "}
-                <ProgressCircle percent={80} strokeColor="#8B00E8" w={100} />
-              </p>
-
-              <p className="text-white text-center items-center">
-                <span>HTML</span>{" "}
-                <ProgressCircle percent={95} strokeColor="#CA194D" w={100} />
-              </p>
-            </HStack>
+          <div className="flex flex-col items-center gap-2">
+            <ProgressCircle percent={90} strokeColor="#4caf50" w={70} className="text-white "/>
+            <span className="text-[#4caf50] font-semibold text-sm sm:text-base">CSS</span>
           </div>
 
-          <div className="text-white">
-            <HStack className="flex justify-center  mt-25" spacing={100}>
-              <p className="text-white text-center items-center">
-                {" "}
-                <span>Javascript</span>{" "}
-                <ProgressCircle percent={70} strokeColor="#E60CE6" w={100} />
-              </p>
-              <p className="text-white text-center ">
-                <span>VS Code</span>{" "}
-                <ProgressCircle percent={70} strokeColor="#FF0000" w={100} />
-              </p>
-              <p className="text-white text-center items-center">
-                <span>Firebase</span>{" "}
-                <ProgressCircle percent={80} strokeColor="#FCB045" w={100} />
-              </p>
+          <div className="flex flex-col items-center gap-2">
+            <ProgressCircle percent={80} strokeColor="#8B00E8" w={70} className="text-white "/>
+            <span className="text-[#8B00E8] font-semibold text-sm sm:text-base">Tailwind CSS</span>
+          </div>
 
-              <p className="text-white text-center items-center">
-                <span>System Design</span>{" "}
-                <ProgressCircle percent={90} strokeColor="#00FFC3" w={100} />
-              </p>
-            </HStack>
+          <div className="flex flex-col items-center gap-2">
+            <ProgressCircle percent={95} strokeColor="#CA194D" w={70} className="text-white "/>
+            <span className="text-[#CA194D] font-semibold text-sm sm:text-base">HTML</span>
+          </div>
+
+          <div className="flex flex-col items-center gap-2">
+            <ProgressCircle percent={70} strokeColor="#E60CE6" w={70} className="text-white "/>
+            <span className="text-[#E60CE6] font-semibold text-sm sm:text-base">Javascript</span>
+          </div>
+
+          <div className="flex flex-col items-center gap-2">
+            <ProgressCircle percent={70} strokeColor="#FF0000" w={70} className="text-white "/>
+            <span className="text-[#FF0000] font-semibold text-sm sm:text-base">VS Code</span>
+          </div>
+
+          <div className="flex flex-col items-center gap-2">
+            <ProgressCircle percent={80} strokeColor="#FCB045" w={70} className="text-white "/>
+            <span className="text-[#FCB045] font-semibold text-sm sm:text-base">Firebase</span>
+          </div>
+
+          <div className="flex flex-col items-center gap-2">
+            <ProgressCircle percent={90} strokeColor="#00FFC3" w={70} className="text-white "/>
+            <span className="text-[#00FFC3] font-semibold text-sm sm:text-base">System Design</span>
           </div>
         </div>
       </Container>
