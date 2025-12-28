@@ -44,7 +44,7 @@ const Project = () => {
   };
 
   return (
-    <div className="py-50">
+    <div className="py-50 bg-black/50 h-screen">
       <div className="max-w-200 mx-auto h-150 relative bg-gray-700  rounded-lg shadow-lg">
         <img
           src={projects[current].image}

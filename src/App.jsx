@@ -4,8 +4,9 @@ import Skill from "./components/skills/Skill";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router"; 
 import code from "../src/assets/code.mp4";
 import Project from "./components/project/Project";
+import Experience from "./components/experience/Experience";
 
-// একটি layout component বানাও যা সব পেজে Navbar দেখাবে
+
 function Layout() {
   return (
     <div>
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: "banner", element: <Banner /> },
       { path: "skill", element: <Skill /> },
       { path: "project", element: <Project /> },
+      { path: "experience", element: <Experience /> },
       { path: "", element: <Banner /> }, // default route
     ],
   },
