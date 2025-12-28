@@ -6,7 +6,10 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-// import { HStack, ProgressCircle } from 'rsuite';
+import Image from 'rsuite/Image';
+import 'rsuite/Image/styles/index.css';
+import image from "../../assets/image.png"
+import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <div className='bg-black/50 py-50 h-screen'>
@@ -57,13 +60,40 @@ const Banner = () => {
     </div>
 
 
-    {/* <div className="text-white">
-     <HStack spacing={20}>
-    <ProgressCircle percent={30} strokeColor="#ffc107" w={100} />
-    <ProgressCircle percent={80} strokeColor="#4caf50" w={100} />
-    <ProgressCircle percent={70} strokeColor="#000" w={100} />
-  </HStack>
-    </div> */}
+<div className="flex justify-center items-center">
+  <motion.div
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{
+      opacity: 1,
+      scale: 1,
+      borderColor: [
+        "#6366f1",
+        "#22d3ee",
+        "#ec4899",
+        "#facc15",
+        "#10b981",
+        "#6366f1",
+      ], // random colors sequence
+    }}
+    transition={{
+      duration: 10,   // total cycle duration
+      repeat: Infinity, // loop forever
+      ease: "linear",
+    }}
+    whileHover={{ scale: 1.1 }}
+    className="w-96 h-96 rounded-full border-4 p-1 border-blue-500 overflow-hidden flex justify-center items-center"
+  >
+    <Image
+      src={image}
+      alt="profile"
+      width={384}
+      height={384}
+      className="rounded-full object-cover w-full h-full"
+    />
+  </motion.div>
+</div>
+
+
 
 
     </div>

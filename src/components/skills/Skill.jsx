@@ -2,7 +2,7 @@ import { HStack, ProgressCircle } from "rsuite";
 import Container from "../container/Container";
 const Skill = () => {
   return (
-    <div className="bg-black/0 h-screen py-40 ">
+    <div className="bg-black/50 h-screen py-30 ">
       <Container>
         <div className=" py-20">
           <div className="text-white text-center justify-center">

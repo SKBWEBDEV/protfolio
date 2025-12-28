@@ -1,8 +1,9 @@
 import Navber from "./components/navber/Navber";
 import Banner from "./components/banner/Banner";
 import Skill from "./components/skills/Skill";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router"; // react-router-dom ব্যবহার করো
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router"; 
 import code from "../src/assets/code.mp4";
+import Project from "./components/project/Project";
 
 // একটি layout component বানাও যা সব পেজে Navbar দেখাবে
 function Layout() {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
     children: [
       { path: "banner", element: <Banner /> },
       { path: "skill", element: <Skill /> },
+      { path: "project", element: <Project /> },
       { path: "", element: <Banner /> }, // default route
     ],
   },
