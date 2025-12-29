@@ -45,7 +45,7 @@ const Project = () => {
   };
 
   return (
-    <div className="py-16 bg-black/50 min-h-screen flex items-center justify-center">
+    <div className="py-16 min-h-screen flex items-center justify-center">
       <div className="w-full max-w-4xl relative bg-gray-700 rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
         
         {/* Project Image */}

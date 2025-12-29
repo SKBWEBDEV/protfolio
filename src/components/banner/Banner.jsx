@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <div className='pt-40 h-screen bg-black/50'> 
+    <div className='pt-40 h-screen '> 
       <Container>
         <div className="flex  flex-col md:flex-row items-center  md:gap-70">
 

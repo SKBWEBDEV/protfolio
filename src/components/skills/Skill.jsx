@@ -3,7 +3,7 @@ import Container from "../container/Container";
 
 const Skill = () => {
   return (
-    <div className="bg-black/50 py-16 h-screen pt-25 md:pt-70">
+    <div className=" py-16 h-screen pt-25 md:pt-70">
       <Container>
         {/* Heading */}
         <div className="text-white text-center mb-10">

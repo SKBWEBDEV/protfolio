@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import code from "../src/assets/code.mp4";
 import Project from "./components/project/Project";
 import Experience from "./components/experience/Experience";
+import Contact from "./components/contact/Contact";
 
 
 function Layout() {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       { path: "skill", element: <Skill /> },
       { path: "project", element: <Project /> },
       { path: "experience", element: <Experience /> },
+      { path: "contact", element: <Contact /> },
       { path: "", element: <Banner /> }, // default route
     ],
   },

@@ -7,7 +7,7 @@ const Navber = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md">
+    <div className="fixed top-0 left-0 w-full z-50  backdrop-blur-md">
       <Container>
         <div className="flex items-center justify-between py-4">
 
@@ -37,7 +37,8 @@ const Navber = () => {
             <li><Link to="/skill" className="hover:text-sky-400 block px-4 sm:px-0">Skills</Link></li>
             <li><Link to="/project" className="hover:text-sky-400 block px-4 sm:px-0">Projects</Link></li>
             <li><Link to="/experience" className="hover:text-sky-400 block px-4 sm:px-0">Experience</Link></li>
-            <li className="hover:text-sky-400 cursor-pointer block px-4 sm:px-0">Contact</li>
+            <li><Link to="/contact" className="hover:text-sky-400 block px-4 sm:px-0">Contact</Link></li>
+            {/* <li className="hover:text-sky-400 cursor-pointer block px-4 sm:px-0">Contact</li> */}
           </ul>
 
         </div>

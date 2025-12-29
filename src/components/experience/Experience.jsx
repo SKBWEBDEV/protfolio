@@ -4,7 +4,7 @@ import "rsuite/Timeline/styles/index.css";
 
 const Experience = () => {
   return (
-    <div className="py-16 bg-black/50 min-h-screen md:pt-50 pt-24">
+    <div className="py-16  min-h-screen md:pt-50 pt-24">
       <Container>
         {/* Section Title */}
         <div className="text-white text-center">
