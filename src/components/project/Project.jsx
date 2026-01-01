@@ -20,7 +20,7 @@ const projects = [
     image: fb,
     liveLink: "https://facebook-y8y1.vercel.app",
     githubLink: "https://github.com/SKBWEBDEV/facebook",
-    technologies: ["HTML", "CSS", "JavaScript", "Node Js"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "Node Js"],
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const projects = [
     image: orebi,
     liveLink: "https://orebi-nine-chi.vercel.app/",
     githubLink: "https://github.com/SKBWEBDEV/orebi",
-    technologies: ["React", "JavaScript", "Node Js"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "Node Js"],
   },
 ];
 
@@ -78,16 +78,14 @@ const Project = () => {
             href={projects[current].liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 hover:bg-green-400 text-white px-4 py-2 rounded font-semibold transition-all duration-300"
-          >
+            className="bg-blue-600 hover:bg-green-400 text-white px-4 py-2 rounded font-semibold transition-all duration-300">
             Live Project
           </a>
           <a
             href={projects[current].githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 hover:bg-green-400 text-white px-4 py-2 rounded font-semibold transition-all duration-300"
-          >
+            className="bg-blue-600 hover:bg-green-400 text-white px-4 py-2 rounded font-semibold transition-all duration-300">
             Github Link
           </a>
         </div>
