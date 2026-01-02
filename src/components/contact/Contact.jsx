@@ -91,8 +91,7 @@ const Contact = () => {
           <p className="font-semibold">Message</p>
           <textarea
             className="border-2 w-full h-24 rounded-lg border-[#ee9ca7] outline-0 p-3 resize-none"
-            placeholder="Tell me about your project..."
-          ></textarea>
+            placeholder="Tell me about your project..."></textarea>
         </div>
 
         <div className="mt-10">

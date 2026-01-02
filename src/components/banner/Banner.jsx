@@ -45,11 +45,11 @@ const Banner = () => {
             <div>
               <StyledWrapper>
       <ul className="wrapper">
-        <li className="icon facebook">
+        <li className="icon instagram">
           <span className="tooltip">Github</span>
           <a href="https://github.com/SKBWEBDEV"><FaGithub/></a>
         </li>
-        <li className="icon twitter">
+        <li className="icon instagram">
           <span className="tooltip">Facebook</span>
           <a href="https://www.facebook.com/"><FaFacebookF/></a>
         </li>
