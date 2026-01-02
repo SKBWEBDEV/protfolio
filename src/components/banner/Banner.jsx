@@ -51,7 +51,7 @@ const Banner = () => {
         </li>
         <li className="icon twitter">
           <span className="tooltip">Facebook</span>
-           <FaFacebookF/>
+          <a href="https://www.facebook.com/"><FaFacebookF/></a>
         </li>
         <li className="icon instagram">
           <span className="tooltip">LinkedIn</span>
@@ -59,7 +59,7 @@ const Banner = () => {
         </li>
         <li className="icon instagram">
           <span className="tooltip">Twitter</span>
-          <FaTwitter/>
+          <a href=""><FaTwitter/></a>
         </li>
         <li className="icon instagram">
           <span className="tooltip">Mail</span>
@@ -85,9 +85,8 @@ const Banner = () => {
     }}
     transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
     whileHover={{ scale: 1.05 }}
-    className="w-48 sm:w-60 md:w-96 h-48 sm:h-72 md:h-96 rounded-full border-4 border-blue-500 p-1 overflow-hidden flex justify-center items-center"
-    style={{ minWidth: '180px', minHeight: '180px' }} // prevent too small on very small screens
-  >
+    className="w-48 sm:w-60 md:w-96 h-48 sm:h-72 md:h-96 rounded-full border-4 overflow-hidden flex justify-center items-center"
+    style={{ minWidth: '180px', minHeight: '180px' }} >
     <Image
       src={image}
       alt="profile"
