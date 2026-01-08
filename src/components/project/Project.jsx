@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import nexcent from "../../assets/nexcent.png";
 import fb from "../../assets/fb.png";
 import orebi from "../../assets/orebi.png";
+import petroil from "../../assets/petroil.png";
 
 const projects = [
   {
@@ -29,6 +30,15 @@ const projects = [
     image: orebi,
     liveLink: "https://orebi-nine-chi.vercel.app/",
     githubLink: "https://github.com/SKBWEBDEV/orebi",
+    technologies: ["React", "Tailwind CSS", "JavaScript", "Node Js"],
+  },
+  {
+    id: 3,
+    title: "Project Three",
+    description: "petroil",
+    image: petroil,
+    liveLink: "https://petroil-p4jk.vercel.app",
+    githubLink: "https://github.com/SKBWEBDEV/petroil",
     technologies: ["React", "Tailwind CSS", "JavaScript", "Node Js"],
   },
 ];
@@ -60,8 +70,7 @@ const Project = () => {
           {projects[current].technologies.map((tech, index) => (
             <span
               key={index}
-              className="text-white text-xs sm:text-sm md:text-base bg-violet-700 px-2 sm:px-3 py-1 rounded font-semibold"
-            >
+              className="text-white text-xs sm:text-sm md:text-base bg-violet-700 px-2 sm:px-3 py-1 rounded font-semibold">
               {tech}
             </span>
           ))}

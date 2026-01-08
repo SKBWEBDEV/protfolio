@@ -20,13 +20,13 @@ const Banner = () => {
           <div className='flex-1 text-center md:text-left'>
             <p className='text-white font-bold text-2xl sm:text-3xl md:text-4xl'>Hello, It's Me</p>
             <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl text-amber-300 md:mt-10 mt-2'>MD SHAKIB</h1>
-            <h2 className='md:mt-10 text-2xl sm:text-3xl md:text-4xl font-bold bg-linear-to-r from-red-500 via-yellow-300 to-cyan-300 bg-clip-text text-transparent mt-2'>
+            <h2 className='md:mt-10 text-2xl sm:text-3xl md:text-4xl font-bold bg-linear-to-r text-white bg-clip-text mt-2'>
               And I'm a Front-End Web <br /><span>Developer</span>
             </h2>
-            <h4 className='md:mt-10 font-semibold text-lg sm:text-xl md:text-2xl bg-linear-to-r from-[#9900FF] via-red-500 to-amber-400 text-transparent bg-clip-text mt-4'>
+            <h4 className='md:mt-10 font-semibold text-lg sm:text-xl md:text-2xl bg-linear-to-r text-white bg-clip-text mt-4'>
               I'm a Student Of Creative IT Institute.
             </h4>
-            <p className='md:mt-10 text-sm md:w-140 sm:text-base md:text-lg mt-4 bg-linear-to-r from-[#F5F5F5] via-red-500 to-amber-400 text-transparent bg-clip-text'>
+            <p className='md:mt-10 text-sm md:w-140 sm:text-base md:text-lg mt-4 bg-linear-to-r text-white  bg-clip-text'>
               I specialize in creating pixel-perfect, high-performance Website & web applications using modern technologies like HTML, CSS, Bootstrap, Tailwind, React & Javascript.
             </p>
 
@@ -51,7 +51,7 @@ const Banner = () => {
         </li>
         <li className="icon instagram">
           <span className="tooltip">Facebook</span>
-          <a href="https://www.facebook.com/"><FaFacebookF/></a>
+          <a href="https://web.facebook.com/?_rdc=1&_rdr#"><FaFacebookF/></a>
         </li>
         <li className="icon instagram">
           <span className="tooltip">LinkedIn</span>
@@ -76,7 +76,7 @@ const Banner = () => {
 
           {/* Right Image */}
           <div className="flex-1 md:block hidden  justify-center md:justify-end">
-  <motion.div
+  {/* <motion.div
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{
       opacity: 1,
@@ -86,7 +86,7 @@ const Banner = () => {
     transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
     whileHover={{ scale: 1.05 }}
     className="w-48 sm:w-60 md:w-96 h-48 sm:h-72 md:h-96 rounded-full border-4 overflow-hidden flex justify-center items-center"
-    style={{ minWidth: '180px', minHeight: '180px' }} >
+    style={{ minWidth: '180px', minHeight: '180px' }} > */}
     <Image
       src={image}
       alt="profile"
@@ -94,7 +94,7 @@ const Banner = () => {
       height={384}
       className="rounded-full object-cover w-full h-full"
     />
-  </motion.div>
+  {/* </motion.div> */}
 </div>
 
 
